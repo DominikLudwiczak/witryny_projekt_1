@@ -1,0 +1,58 @@
+.start
+{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 102, 204, .6), rgba(196, 191 ,191, .6)), url('./img/start.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+
+.navigation
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Oswald;
+    opacity: .8;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navigation a
+{
+    padding: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 75em) /*tab-land*/
+{
+    .navigation
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) /*phone*/
+{
+    .navigation
+    {
+        font-size: 1rem;
+    }
+}
