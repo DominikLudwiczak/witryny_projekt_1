@@ -11,7 +11,7 @@
     grid-template-areas: "nav con";
 }
 
-.footer--content
+.footer__content
 {
     text-align: center;
 }
@@ -23,6 +23,7 @@
     display: inline-block;
     text-decoration: none;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .footer__list
@@ -38,7 +39,7 @@
 
 .footer__item:not(:last-child)
 {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
 }
 
 .footer__link
@@ -53,7 +54,15 @@
     text-decoration: underline;
 }
 
-.footer--contact
+
+.footer__content--text
+{
+    width: 60%;
+    font-size: 1.4rem;
+    margin: 3rem auto;
+}
+
+.footer__contact
 {
     display: grid;
     grid-area: con;
@@ -66,15 +75,17 @@
 {
     .footer
     {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "nav"
-                             "con";
+        display: block;
         padding-top: 5rem;
         font-size: 1.4rem;
     }
 
-    .footer--contact
+    .footer__content--text
+    {
+        font-size: 1.2rem;
+    }
+
+    .footer__contact
     {
         margin-top: 2rem;
     }
@@ -83,6 +94,11 @@
 @media only screen and (max-width: 37.5em) /*phone*/
 {
     .footer
+    {
+        font-size: 1rem;
+    }
+
+    .footer__content--text
     {
         font-size: 1rem;
     }

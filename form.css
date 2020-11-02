@@ -18,7 +18,7 @@
     border-radius: 2px;
     border: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    width: 100%;
     display: block;
 }
 
@@ -46,4 +46,70 @@
     font-weight: 700;
     margin-top: .7rem;
     display: block;
+}
+
+.btn
+{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    float: right;
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient(to right bottom, #0997c2, #2653e8);
+    color: inherit;
+    transition: all .2s;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    transform: scale(1.1) translateY(-4px);
+    -webkit-box-shadow: 4px 4px 4px -2px black;
+    -moz-box-shadow: 4px 4px 4px -2px black;
+    box-shadow: 4px 4px 4px -2px black;
+}
+
+.btn:active
+{
+    transform: scale(1.05) translateY(-3px);
+    outline: none;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 56.25em) /*tab-port*/
+{
+    .form
+    {
+        width: 65%;
+        place-self: start center;
+    }
+
+    .form__input
+    {
+        font-size: 1.1rem;
+    }
+
+    .form__label
+    {
+        font-size: 1.1rem;
+    }
+
+    .btn
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) /*phone*/
+{
+    .form
+    {
+        width: 95%;
+    }
+
+    .btn
+    {
+        font-size: 1.1rem;
+    }
 }
