@@ -7,13 +7,13 @@
     border-radius: 3px;
     background-image: linear-gradient(to right bottom, #0997c2, #2653e8);
     color: inherit;
-    transition: all .2s;
+    transition: all .1s;
 }
 
 .btn:hover
 {
     cursor: pointer;
-    transform: scale(1.1) translateY(-4px);
+    transform: scale(1.1) translateY(-2px);
     -webkit-box-shadow: 4px 4px 4px -2px black;
     -moz-box-shadow: 4px 4px 4px -2px black;
     box-shadow: 4px 4px 4px -2px black;
@@ -52,6 +52,11 @@
     {
         font-size: 1.3rem;
     }
+
+    .btn__heading
+    {
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (max-width: 37.5em) /*phone*/
@@ -59,5 +64,10 @@
     .btn
     {
         font-size: 1.1rem;
+    }
+
+    .btn__heading
+    {
+        font-size: 1.4rem;
     }
 }

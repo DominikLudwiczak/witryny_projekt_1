@@ -1,0 +1,34 @@
+.baner__sale
+{
+    position: absolute;
+    right: -14vh;
+    top: -11vh;
+    transform: rotate(-20deg);
+    min-height: 15vh;
+    min-width: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #F7E80E;   
+}
+
+@media only screen and (max-width: 75em) /*tab-land*/
+{
+    .baner__sale
+    {
+        font-size: 1.7rem;
+        right: -8vh;
+        min-height:13vh;
+        min-width:13vh;
+    }
+}
+
+@media only screen and (max-width: 37.5em) /*phone*/
+{
+    .baner__sale
+    {
+        font-size: 1.4rem;
+    }
+}

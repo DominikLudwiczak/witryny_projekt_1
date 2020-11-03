@@ -48,6 +48,18 @@
 }
 
 
+.section-describe
+{
+    margin: 5rem 10rem;
+}
+
+.describe
+{
+    display: flex;
+
+}
+
+
 
 /* responsive */
 
