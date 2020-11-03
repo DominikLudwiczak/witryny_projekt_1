@@ -1,0 +1,63 @@
+.btn
+{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    float: right;
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient(to right bottom, #0997c2, #2653e8);
+    color: inherit;
+    transition: all .2s;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    transform: scale(1.1) translateY(-4px);
+    -webkit-box-shadow: 4px 4px 4px -2px black;
+    -moz-box-shadow: 4px 4px 4px -2px black;
+    box-shadow: 4px 4px 4px -2px black;
+}
+
+.btn:active
+{
+    transform: scale(1.05) translateY(-3px);
+    outline: none;
+}
+
+
+.btn__heading
+{
+    padding: .8rem 2rem;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: all .2s;
+    display: inline-block;
+}
+
+.btn__heading:hover
+{
+    transform: scale(1.05) translateY(-1px);
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 56.25em) /*tab-port*/
+{
+    .btn
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) /*phone*/
+{
+    .btn
+    {
+        font-size: 1.1rem;
+    }
+}
