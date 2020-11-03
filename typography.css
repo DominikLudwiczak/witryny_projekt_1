@@ -45,6 +45,15 @@
     {
         font-size: 1.9rem;
     }
+
+    .paragraph
+    {
+        column-count: 2;
+
+        max-height: 65vh;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
 }
 
 @media only screen and (max-width: 56.25em) /*tab-port*/
@@ -70,5 +79,10 @@
     .heading__teriary
     {
         font-size: 1.5rem;
+    }
+
+    .paragraph
+    {
+        column-count: 1;
     }
 }
