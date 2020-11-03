@@ -53,10 +53,37 @@
     margin: 5rem 10rem;
 }
 
-.describe
+.describe__photos
 {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'p1 p2 p3';
+    min-height: 30vh;
+}
 
+.describe__photos--1
+{
+    display: grid;
+    grid-area: p1;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to left bottom, rgba(125, 193, 228, .6),rgba(196, 191 ,191, .6)), url('./img/work1.jpg');
+}
+
+.describe__photos--2
+{
+    display: grid;
+    grid-area: p2;
+}
+
+.describe__photos--3
+{
+    display: grid;
+    grid-area: p3;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right bottom,  rgba(125, 193, 228, .6), rgba(196, 191 ,191, .6)), url('./img/work2.jpg');
 }
 
 
@@ -71,10 +98,32 @@
     }
 }
 
+@media only screen and (max-width: 56.25em) /*tab-port*/
+{
+    .describe__photos
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'p1 p3' 'p2 p2';
+    }
+
+    .describe__photos--2
+    {
+        padding: 2rem;
+    }
+}
+
 @media only screen and (max-width: 37.5em) /*phone*/
 {
     .navigation
     {
         font-size: 1rem;
+    }
+
+    .describe__photos
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'p2';
     }
 }

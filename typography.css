@@ -11,9 +11,22 @@
     text-transform: uppercase;
 }
 
+.heading__teriary
+{
+    font-size: 3rem;
+}
+
 .paragraph
 {
-    column-count: 2;
+    column-count: 3;
+}
+
+@media only screen and (max-width: 112.5em) /*big-desktop*/
+{
+    .heading__teriary
+    {
+        font-size: 2.4rem;
+    }
 }
 
 @media only screen and (max-width: 75em) /*tab-land*/
@@ -22,6 +35,24 @@
     {
         font-size: 3rem;
     }
+
+    .heading__secondary
+    {
+        font-size: 2.8rem;
+    }
+
+    .heading__teriary
+    {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 56.25em) /*tab-port*/
+{
+    .heading__teriary
+    {
+        font-size: 1.7rem;
+    }
 }
 
 @media only screen and (max-width: 37.5em) /*phone*/
@@ -29,5 +60,15 @@
     .heading__primary
     {
         font-size: 2.3rem;
+    }
+
+    .heading__secondary
+    {
+        font-size: 2rem;
+    }
+
+    .heading__teriary
+    {
+        font-size: 1.5rem;
     }
 }
