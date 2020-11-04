@@ -1,39 +1,49 @@
 .mr-bot-sm
 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 
 .mr-bot-med
 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem !important;
 }
 
 .mr-bot-lg
 {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
 }
 
 .mr-bot-xlg
 {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
+}
+
+.mr-top-med
+{
+    margin-top: 2rem !important;
+}
+
+.mr-top-lg
+{
+    margin-top: 4rem !important;
 }
 
 .text-center
 {
-    text-align: center;
+    text-align: center !important;
 }
 
 .anim-left
 {
-    animation-name: moveInLeft;
+    animation-name: moveInLeft !important;
 }
 
 .anim-right
 {
-    animation-name: moveInRight;
+    animation-name: moveInRight !important;
 }
 
 .anim-bottom
 {
-    animation-name: moveInBottom;
+    animation-name: moveInBottom !important;
 }

@@ -1,0 +1,17 @@
+.section-opinions
+{
+    padding: 0 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.opinion
+{
+    margin: 2rem auto;
+    min-height: 15vh;
+    width: 90%;
+    background-image: linear-gradient(to left top, #E2E0E0, #F3F3F3);
+    -webkit-box-shadow: 5px 5px 7px 0px rgba(205,201,201,1);
+    -moz-box-shadow: 5px 5px 7px 0px rgba(205,201,201,1);
+    box-shadow: 5px 5px 7px 0px rgba(205,201,201,1);
+}
