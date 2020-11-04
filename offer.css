@@ -7,19 +7,87 @@
     padding: 3rem 8rem;
 }
 
-.offer__1
+.offer
 {
-    background-color: khaki;
-    text-align: center;
-    min-height: 30vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: flex-end;
 }
 
-.offer__list
+.offer__photo
 {
-    list-style-type: none;
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center;
+    transition: all .4s;
 }
 
-.offer__link
+.offer__photo--1
 {
-    
+    background-image: url('./img/hollywood.jpg');
+}
+
+.offer__photo--2
+{
+    background-image: url('./img/maldives.jpg');
+}
+
+.offer__photo--3
+{
+    background-image: url('./img/mallorca.jpg');
+}
+
+.offer__photo--4
+{
+    background-image: url('./img/italy.jpg');
+}
+
+.offer:hover .offer__photo
+{
+    transform: scale(1.1);
+}
+
+.offer:hover .offer-baner__heading
+{
+    text-decoration: underline;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 112.5em) /*big-desktop*/
+{
+    .offerts
+    {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 75em) /*tab-land*/
+{
+    .offerts
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 56.25em) /*tab-port*/
+{
+    .offerts
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 3rem 8rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) /*phone*/
+{
+    .offerts
+    {
+        padding: 3rem 2rem;
+    }
 }

@@ -11,7 +11,8 @@
     justify-content: center;
     font-size: 2rem;
     border-radius: 50%;
-    background-color: #F7E80E;   
+    background-color: #F7E80E;
+    animation-duration: 1s;
 }
 
 .photo
@@ -27,7 +28,7 @@
 
 .baner-describe
 {
-    background-color: #16d2df;
+    background-color: #73b4f5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,11 +36,43 @@
     color: white;
 }
 
+.offer-baner
+{
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #1370C2;
+    padding: 1rem;
+    position: absolute;
+    margin-bottom: 2rem;
+    place-self: center;
+}
+
+.offer-baner__heading
+{
+    color: #1940AB;
+    font-size: 2.5rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
 @media only screen and (max-width: 112.5em) /*big-desktop*/
 {
     .icon-map
     {
         font-size: 7rem !important;
+    }
+
+    .offer-baner
+    {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .offer-baner__heading
+    {
+        font-size: 1.8rem;
     }
 }
 

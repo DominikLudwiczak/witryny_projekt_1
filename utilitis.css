@@ -22,3 +22,18 @@
 {
     text-align: center;
 }
+
+.anim-left
+{
+    animation-name: moveInLeft;
+}
+
+.anim-right
+{
+    animation-name: moveInRight;
+}
+
+.anim-bottom
+{
+    animation-name: moveInBottom;
+}
