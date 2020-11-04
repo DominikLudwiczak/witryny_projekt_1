@@ -71,6 +71,14 @@
 
 /* responsive */
 
+@media only screen and (max-width: 112.5em) /*big-desktop*/
+{
+    .footer
+    {
+        font-size: 1.4rem;
+    }
+}
+
 @media only screen and (max-width: 75em) /*tab-land*/
 {
     .footer
@@ -95,11 +103,12 @@
 {
     .footer
     {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        padding: 8rem 1rem;
     }
 
     .footer__content--text
     {
-        font-size: 1rem;
+        width: 90%;
     }
 }

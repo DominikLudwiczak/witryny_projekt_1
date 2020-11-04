@@ -46,7 +46,7 @@
     box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
 }
 
-@media only screen and (max-width: 56.25em) /*tab-port*/
+@media only screen and (max-width: 112.5em) /*big-desktop*/
 {
     .btn
     {
@@ -58,6 +58,7 @@
         font-size: 1.6rem;
     }
 }
+
 
 @media only screen and (max-width: 37.5em) /*phone*/
 {
